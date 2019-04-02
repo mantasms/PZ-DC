@@ -103,11 +103,11 @@ if (!empty($_POST)) {
         $model_gerimas = new App\model\ModelGerimai($db, USER_DRINKS);
         $balius = new \App\Balius($model_user, $model_gerimas);
 
-        if ($balius->getSilpniejiAmount() != 0 || $balius->getStipriejiAmount() != 0) {
-            if (($balius->getSilpniejiAmount() / $balius->getStipriejiAmount()) < 2) {
-                $error_msg = 'Truksta zagirono, eik nusipirk NX';
-            }
-        }
+//        if ($balius->getSilpniejiAmount() != 0 || $balius->getStipriejiAmount() != 0) {
+//            if (($balius->getSilpniejiAmount() / $balius->getStipriejiAmount()) < 2) {
+//                $error_msg = 'Truksta zagirono, eik nusipirk!';
+//            }
+//        }
     }
 }
 ?>

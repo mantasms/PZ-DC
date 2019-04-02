@@ -14,13 +14,13 @@ $balius = new \App\Balius($model_user, $model_gerimas);
         <title>P-OOP party !</title>
         <link rel="stylesheet" href="/css/style.css">
     </head>
-    <body class="<?php print $balius->partyStatus(); ?>">
+    <body class="<?php print $balius->getPartyStatus(); ?>">
         <nav class="container">
             <a href="join-it.php">JOIN US TO DRINK</a>
             <a href="bring-it.php">BRING SOME DRINKS</a>
         </nav>
         <h1>P-OOOPPARTY IS ON!</h1>
-        <h2><?php print $balius->partyStatus(); ?></h2>
+        <h2><?php print $balius->getPartyStatus(); ?></h2>
         <div class="container">
             <div class="flex-container">
                 <h3>Baliaus dalyviai:</h3>

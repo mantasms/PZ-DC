@@ -152,7 +152,7 @@ $fail_msg = 'Party is already pooped. Bring some drinks first, you cheap-ass!';
             <a href="index.php">PZ/DC</a>
             <a href="bring-it.php">BRING SOME DRINKS</a>
         </nav>
-        <?php if ($balius->partyStatus() != 'POOP'): ?>
+        <?php if ($balius->getPartyStatus() != 'POOP'): ?>
             <?php require '../core/views/form.php'; ?>
         <?php else: ?>
             <?php print $fail_msg; ?>
